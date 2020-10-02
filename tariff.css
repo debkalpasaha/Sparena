@@ -1,0 +1,117 @@
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .box{
+      box-shadow:3px 3px 4px #9b37df;
+   
+      margin-left:2rem;
+      background: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      background-position: center;
+      background-size: cover;
+      filter: brightness(90%);
+      height: 95%;
+      position: relative;
+      width: 95%;
+      color: white;
+      text-shadow: 2px 2px 4px rgb(64, 201, 255);
+      border-radius: 25px;
+      padding-top:1rem;
+     
+     
+      
+  }
+  
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+  padding:3rem;
+    margin-top: 3rem;
+  }
+  
+  td, th {
+
+    font-size: 1.5rem;
+      font-weight: 300;
+  
+
+ 
+  
+
+  }
+
+  .boxtitle{
+   width:0;
+   height:0;
+  }
+
+  
+  
+  tr{
+      font-size: 1.5rem;
+      font-weight: 300;
+     
+     
+  }
+ .box2{
+  box-shadow:3px 3px 4px #047a8f;
+   
+  margin-left:2rem;
+  background: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(90%);
+  height: 95%;
+  position: relative;
+  width: 95%;
+  color: white;
+  
+  border-radius: 25px;
+ 
+    background-image: linear-gradient(to top, #37c6df 10%, #cd94f3 100%);
+    text-shadow: 2px 2px 4px rgb(222, 238, 245);
+    padding-top:1rem;
+  }
+
+  .boxgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   
+    padding-right:3%;
+  }
+
+  @media(max-width:900px){
+    .boxgrid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding:0;
+    }
+    .box,.box2{
+     height: 95%;
+     margin-left:1rem;
+     margin-top:0;
+    }
+  
+  }
+
+  .cardgrid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+  }
+
+  input[type="checkbox"]{
+    margin-left: 0.7rem;
+    box-shadow: 2px 2px 4px #9fc5ff;
+  }
+  
+
+ 
+ 
