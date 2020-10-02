@@ -191,12 +191,7 @@ input [type="checkbox"]{
       }
     }
 
-    @media(max-width: 900px){
-.boxtitle,.tour{
-    visibility: hidden;
-  }
   
-}
 
 .topnavigation{
   font-size:1rem;
@@ -234,6 +229,7 @@ input [type="checkbox"]{
 @media(min-width: 900px){
 .topnavigation{
     visibility: hidden;
+
  
   }
   .topnavigation a {
@@ -255,6 +251,21 @@ input [type="checkbox"]{
 .topnav{
   margin-left:2rem;
 }
+
+
+@media(max-width: 900px){
+.topnav,.boxtitle,.tour{
+    visibility: hidden;
+    height:0;
+    margin:0;
+    padding:0;
+  }
+
+  .topnav a{
+    font-size: 0;
+  }
+}
+  
     
 </style>
 
