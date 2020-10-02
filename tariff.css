@@ -19,6 +19,7 @@
       text-shadow: 2px 2px 4px rgb(64, 201, 255);
       border-radius: 25px;
       padding-top:1rem;
+      margin-right:1rem;
      
      
       
@@ -76,6 +77,7 @@
     background-image: linear-gradient(to top, #37c6df 10%, #cd94f3 100%);
     text-shadow: 2px 2px 4px rgb(222, 238, 245);
     padding-top:1rem;
+    margin-right:1rem;
   }
 
   .boxgrid{
