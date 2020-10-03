@@ -97,7 +97,7 @@
       border:solid 0.5rem white;
       margin:1rem;
       margin-bottom: 2rem;
-      height: 400px;
+      height: 450px;
       background-image: linear-gradient( rgb(201, 241, 248) 10%, rgb(245, 227, 244)100%);
       box-shadow: 4px 4px 4px rgb(162, 108, 233);
       padding-left:2rem;
@@ -107,7 +107,7 @@
     .packagebox{
    
         margin-bottom: 5rem;
-        height: 300px;
+        height: 350px;
         background-image: linear-gradient( rgb(201, 241, 248) 10%, rgb(245, 227, 244)100%);
         box-shadow: 4px 4px 4px rgb(162, 108, 233);
        width:90%;
