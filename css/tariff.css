@@ -292,6 +292,15 @@ margin-left: 0.5rem;
     }
   }
 
+  .price{
+width:40%;
+}
+@media(max-width:900px)
+{
+.price{
+width:90%;
+}
+}
 
 
 
