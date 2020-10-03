@@ -10,8 +10,8 @@
 
 
       
-<link rel="stylesheet" href="boxes.css">
-<link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="./css/boxes.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
@@ -26,11 +26,7 @@
 
 
   background-image: linear-gradient( rgb(210, 243, 231) 10%, rgb(34, 214, 238)100%);
-        font-family: "Vibur", cursive;
-        /*   the main font */
-        font-family: "Abel", sans-serif;
-
-        /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
 
    
@@ -328,7 +324,7 @@ body{
  margin-left: 2rem;
  border-radius: 5px;
  filter: brightness(100%);
- border:0.3rem rgb(155, 228, 247) solid;
+ border:0.1rem rgb(155, 228, 247) solid;
 }
 
 #basketballinfo,#cyclinginfo,#spoccerinfo,#swimminginfo,#trackinfo,#spacemintoninfo,#tennisinfo{
@@ -440,7 +436,7 @@ border:none;
   border:solid white 0.08rem;
   border-radius: 5px;
  
-  height: 3rem;
+  height: 3.5rem;
   padding: none;
   background-image: linear-gradient(to top, rgb(85, 165, 218) 10%, rgb(199, 149, 228)100%); 
   color: rgb(255, 255, 255);
@@ -513,9 +509,8 @@ input [type="checkbox"]{
 .heading{
   margin-top:1rem;
   font-size: 2rem;
-  font-weight:300;
-  
-  font-family: "Vibur", cursive;
+  font-weight:400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
  
 }
@@ -542,6 +537,15 @@ input [type="checkbox"]{
   .topnav a{
     font-size: 0;
   }
+}
+
+.sportdetail{
+  margin-top: 2rem;
+  color: #b1f1ce;
+  font-size: 1.3rem;
+  font-weight: 70;
+ text-shadow: 2px 2px 4px rgb(243, 144, 238);
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   
 
@@ -590,7 +594,7 @@ input [type="checkbox"]{
   
      <div style="text-align: center;">
 
-<img src="logo.png" class="logo glow">
+<img src="./img/logo.png" class="logo glow">
 
            <div class="container">
              
@@ -604,41 +608,62 @@ input [type="checkbox"]{
 <br>
 <div id="basketballinfo" class="info">
 <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
-  <p class="cardtitle">Basketball</p>
-
-  <p></p>
+  <p class="cardtitle">Spasketball</p>
+<p class="sportdetail">
+  8 comtemporary  courts, along with magnificent lights and proper training for beginners.
+</p>
+  
 </div>
 
 
 <div id="cyclinginfo" class="info">
   <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
   <p class="cardtitle">Cyclecraft</p>
+  <p class="sportdetail">
+   A 2km long flat track and another 1km long track with hurdles for better practice on space tracks.
+  </p>
 </div>
 
 <div id="swimminginfo" class="info">
   <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
   <p class="cardtitle">Swimming</p>
+  <p class="sportdetail">
+   Pool with dimensions 200x100m and a trainer facility which provides swimming lessons for all 4 strokes-butterfly,backstroke,breaststroke and freestyle.
+  </p>
 </div>
 
 <div id="tennisinfo" class="info">
   <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
   <p class="cardtitle">Tennis</p>
+  <p class="sportdetail">
+   Along with 10 floating tables for all tennis enthusiasts with more bouncing of the ball in less gravity,this facility also provides outer space tennis platforms with the thrill-seekers.
+   </p>
 </div>
 
 <div id="spacemintoninfo" class="info">
   <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
   <p class="cardtitle">Spaceminton</p>
+  <p class="sportdetail">
+   7 furnished courts with electronic scoring and umpiring system,which ensures a fair game play.
+  </p>
 </div>
 
 <div id="trackinfo" class="info">
   <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
   <p class="cardtitle">Track</p>
+  <p class="sportdetail">
+ A 400m Space Jogging track with marks after 50m,100m,200m,so as to measure the distance covered easily.
+  <br>
+  <br>*FREE OF COST SERVICE ACCESSIBLE TO EVERYONE*</p>
 </div>
 
 
 <div id="spoccerinfo" class="info">
   <div style="text-align: right;" onclick="myFunctionclose()" ><i  class="closebutton  fa fa-window-close"></i></div>
   <p class="cardtitle">Spoccer</p>
+  <p class="sportdetail">
+An enormous ground with a reliable referring system to promote impartiality in this revised version of our favourite land game.
+  </p>
 </div>
 
 

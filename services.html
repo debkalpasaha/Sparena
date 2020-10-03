@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset=“UTF-8”>
     
-<link rel="stylesheet" href="packages.css">
+<link rel="stylesheet" href="./css/packages.css">
 
 <style>
 
@@ -15,22 +15,45 @@
       margin-left: 0.5rem;
     }
     
-    .receipt{
+    .receipt {
+        display: block;
+        width: 16%;
+        height: 35px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right, #08638d, #7da0e0, #178ac0);
+        background-size: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        margin-left:42%;
+        margin-bottom:2rem;
+        margin-top:1rem;
+        cursor: pointer;
+        transition: 0.5s;
+        border: solid white 0.2rem;
+        text-underline-position: unset;  
+      }
+     .receipt:hover {
+        background-position: right;
+        color: #fcfcfc;
+        box-shadow: 2px 2px 4px rgb(87, 87, 87);
+      }
 
-margin-bottom: 1.5rem;
-width: 10rem;
-color: white;
-background-color:rgb(121, 113, 231);
-border: none;
-border-radius: 5px;
-font-size: 1.5rem;
+      .receipt link{
+        text-decoration: none;
+      }
+      @media(max-width: 900px)
+      {
+        .receipt{
+        width:50%;
+        margin-left: 7.5rem;
+        }
+      }
 
-}
 
-.receipt:hover{
-color: rgb(0, 30, 129);
-background-color: #bdecbd;
-}
 
 .tour{
     
@@ -90,7 +113,8 @@ background-color: #bdecbd;
      }
 
 body{
-  background-image: linear-gradient(to top, rgb(197, 215, 255) 10%, rgb(33, 6, 107)100%);
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+        background-image: linear-gradient(to top, #d89be0 0%, #3267d8 30%, #b5e6fa 60%, #055f94 100%);
 
     font-family: "Vibur", cursive;
         /*   the main font */
@@ -158,7 +182,7 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
   border:solid white 0.08rem;
   border-radius: 5px;
  
-  height: 3rem;
+  height: 3.5rem;
   padding: none;
   background-image: linear-gradient(to top, rgb(217, 237, 250) 10%, rgb(223, 189, 243)100%); 
   color: rgb(0, 0, 0);
@@ -286,8 +310,10 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
 
   .people{
     font-size: 1.2rem;
-    font-family: "Vibur",cursive;
-  }
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: #032b5a;
+    font-weight: 500;
+   }
 
 
 
@@ -344,25 +370,36 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
   
 
    } 
+
+   .packages:hover{ 
+   
+    
+    background-image: linear-gradient(to top,rgb(143, 229, 240) 30%, rgb(197, 255, 252) 10%, rgb(238, 148, 211)100%);
+ 
+  color:black;
+  border-radius: 5px;
+  margin:1rem;
+
+   } 
    .packages:link {
   font-size: 1.3rem;
   color: rgb(255, 255, 255);
    text-shadow: 2px 1px  2px rgb(191, 170, 240);
-     font-weight: 300;
+     font-weight: 400;
      text-decoration: none;
-     font-family: "Vibur", cursive;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
   text-underline-position: unset;  
 
 }
 
 .packagelist{
-
-  font-family: "Vibur", cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
   color: #aff0f8;
   margin-bottom: 0.2rem;
 text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
+
 }
 @media(max-width: 900px){
   
@@ -375,6 +412,11 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
 .packages{
   margin-left: 0;
 }
+}
+
+#packages{
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   #receiptbox{
     display: none;
@@ -427,7 +469,7 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
 
 </div>
 <ul> 
-  <li class="packagelist">Package List:</li>
+  <li class="packagelist" >Package List:</li>
 
   <li>
   <a href="#spacesaver" class="packages">Space Saver</a>
@@ -451,7 +493,7 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
 </p>
    
     
-  <h2 class="title" id="#packages">Packages Available:</h2>
+  <h2 class="title" id="packages" style="color: #032b5a;">Packages Available:</h2>
   
   <div class="center servicegrid">
     <div id="spacesaver" class="option">
@@ -499,6 +541,7 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
   <img src="./img/spaceminton.jpg" class="gridpic">
   <img src="./img/track.jpg" class="gridpic">
 </div>
+<br>
   <ul>
     <li>Space Swimming- 1 hour</li>
     <li>Spaceminton/Tennis- 1 hour</li>
@@ -536,7 +579,7 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
     <img src="./img/basketball.jpg" class="gridpic">
     <img src="./img/track.jpg" class="gridpic">
   </div>
-
+<br>
     <ul>
       <li>Spoccer- 1 hour</li>
       <li>Spaceball- 2 hour</li>
@@ -576,7 +619,7 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
     <img src="./img/cycling.jpg" class="gridpic">
     <img src="./img/track.jpg" class="gridpic">
   </div>
-
+<br>
       <ul>
         <li>Space Swimming- 1 hour</li>
         <li>Cycle Crafting- 2 hour</li>
@@ -608,16 +651,9 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
 
       <p style="text-align: center;">
 
-        <a href="#receiptbox">
         <input type="button" class="receipt" onclick='printChecked()' value="Get Receipt"/></p>
 
-      </a>
-
-      <div id="receiptbox">
-
-     
-      
-              </div>
+    
 
       
         <script>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset=“UTF-8”>
     
-<link rel="stylesheet" href="tariff.css">
+<link rel="stylesheet" href="./css/tariff.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
      .gridpic{
@@ -31,24 +31,6 @@
 
 
 
-    button:hover {
-      transform: translatey(3px);
-      box-shadow: none;
-    }
-    
-    /* buttons hover Animation */
-    button:hover {
-      animation: ani9 0.4s ease-in-out infinite alternate;
-    }
-    @keyframes ani9 {
-      0% {
-        transform: translateY(3px);
-      }
-      100% {
-        transform: translateY(5px);
-      }
-    }
-    
     i{
       margin-left: 0.5rem;
     }
@@ -70,23 +52,7 @@
      }
     
      
-     button:hover {
-       transform: translatey(3px);
-    
-     }
-    
-     /* buttons hover Animation */
-     button:hover {
-       animation: ani9 0.4s ease-in-out infinite alternate;
-     }
-     @keyframes ani9 {
-       0% {
-         transform: translateY(3px);
-       }
-       100% {
-         transform: translateY(5px);
-       }
-     }
+ 
      .tour:hover{
          color: white;
          text-shadow: 4px 4px 4px rgba(0, 225, 255, 0.884);
@@ -99,15 +65,11 @@
 
      body {
         background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
-        background-image: linear-gradient(to top, #adece9 0%, #9ba0da 100%);
+        background-image: linear-gradient(to top, #74f0e7 0%, #e6bcee 30%, #b5e6fa 60%, #7f88ee 100%);
         background-attachment: fixed;
         background-repeat: no-repeat;
 
-        font-family: "Vibur", cursive;
-        /*   the main font */
-        font-family: "Abel", sans-serif;
-
-        /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
 
 
@@ -153,12 +115,13 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
   border:solid white 0.08rem;
   border-radius: 5px;
  
-  height: 3rem;
-  padding: none;
+  height: 3.5rem;
+  padding-bottom: 2rem;
   background-image: linear-gradient(to top, rgb(217, 237, 250) 10%, rgb(223, 189, 243)100%); 
   color: rgb(0, 0, 0);
   margin: 0.2rem;
   width:8rem;
+  font-size: 1rem;
 
 }
 .boxtitle:hover{
@@ -174,43 +137,42 @@ input [type="checkbox"]{
 }
 
   
-.receipt{
-
-margin-bottom: 2rem;
-width: 10rem;
-color: white;
-background-color:rgb(121, 113, 231);
-border: none;
-border-radius: 5px;
-font-size: 1.5rem;
-
-}
-
-.receipt:hover{
-color: rgb(0, 30, 129);
-background-color: #bdecbd;
-}
-
-
-.boxtitle:hover,.receipt:hover {
-      transform: translatey(3px);
-      box-shadow: none;
-    }
-    
-    /* buttons hover Animation */
-    .boxtitle:hover,.receipt:hover {
-      animation: ani9 0.4s ease-in-out infinite alternate;
-    }
-    @keyframes ani9 {
-      0% {
-        transform: translateY(3px);
+.receipt {
+        display: block;
+        width: 16%;
+        height: 35px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right, #08638d, #7da0e0, #178ac0);
+        background-size: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        margin-left:42%;
+        margin-bottom:2rem;
+        margin-top:1rem;
+        cursor: pointer;
+        transition: 0.5s;
+        border: solid white 0.2rem;
       }
-      100% {
-        transform: translateY(5px);
+     .receipt:hover {
+        background-position: right;
+        color: #fcfcfc;
+        box-shadow: 2px 2px 4px rgb(87, 87, 87);
       }
-    }
 
-  
+      @media(max-width: 900px)
+      {
+        .receipt{
+        width:50%;
+        margin-left: 7.5rem;
+        }
+      }
+
+
+
 
 .topnavigation{
   font-size:1rem;
@@ -351,23 +313,34 @@ select{
 
 .packages{ 
     font-size:1rem; 
-   color: rgb(22, 22, 22);
+   color: rgb(110, 110, 110);
    text-align: justify;
 
 
    padding: 0.1rem;
-   margin-left: 3rem;
+   margin-left: 2rem;
  
   
 
    } 
+
+   .packages:hover{ 
+   
+    
+   background-image: linear-gradient(to top,rgb(143, 229, 240) 30%, rgb(197, 255, 252) 10%, rgb(238, 148, 211)100%);
+
+ color:black;
+ border-radius: 5px;
+ margin:1rem;
+
+  } 
    .packages:link {
   font-size: 1.3rem;
   color: black;
-   text-shadow: 2px 1px  2px rgb(191, 170, 240);
-     font-weight: 300;
+  
+     font-weight: 400;
      text-decoration: none;
-     font-family: "Vibur", cursive;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
   text-underline-position: unset;  
 
@@ -375,11 +348,12 @@ select{
 
 .packagelist{
 
-  font-family: "Vibur", cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
   color: #030257;
   margin-bottom: 0.2rem;
-text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
+text-shadow: 2px 2px 4px rgb(223, 241, 172) ;
+font-weight: 400;
 }
 @media(max-width: 900px){
   
@@ -397,11 +371,34 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
    
 .people{
     font-size: 1.2rem;
-    font-family: "Vibur",cursive;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #030257;
+    font-weight: 500;
   }
 
- 
+  
+
+.boxtitle:hover,.receipt:hover,button:hover {
+      transform: translatey(3px);
+      box-shadow: none;
+    }
+    
+    /* buttons hover Animation */
+    .boxtitle:hover,.receipt:hover,button:hover {
+      animation: ani9 0.4s ease-in-out infinite alternate;
+    }
+    @keyframes ani9 {
+      0% {
+        transform: translateY(3px);
+      }
+      100% {
+        transform: translateY(5px);
+      }
+    }
+    h2{
+      font-weight: 400;
+    }
+    
   
 </style>
 
@@ -468,7 +465,7 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
 
   <a href="#cyclecraft" class="packages">Cyclecraft</a> 
 
-  <a href="#basketball" class="packages">Basketball</a> 
+  <a href="#basketball" class="packages">Spasketball</a> 
 </li>
  </ul> 
 </div>
@@ -647,7 +644,7 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
           
             <div class="cardgrid">
               <div style="text-align: center;">
-                <h2> Space Basketball</h2>
+                <h2> Spasketball</h2>
               <img src="./img/basketball.jpg" class="gridpic2" >
               </div>
               <table>
@@ -674,8 +671,8 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
     </div>
     
 
-    <p style="text-align: center;">
-      <input type="button" class="receipt" onclick='printChecked()' value="Get Receipt"/></p>
+    <div style="text-align: center;">
+      <input type="button" class="receipt" onclick='printChecked()' value="Get Receipt"/></div>
     
 
   
@@ -716,7 +713,7 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
         
             }
           }
-         alert("YOUR RECEIPT\n\nSports Selected:"+package+"\n\nPrice per person is: " +p+ "\n\nTotal number of people: " +pax+"\n\nTotal Price is: " +(p*pax))
+         alert("YOUR RECEIPT\n\nYour Custom Package includes:"+package+"\n\nPrice per person is: " +p+ "\n\nTotal number of people: " +pax+"\n\nTotal Price is: " +(p*pax))
         
         }		
 
