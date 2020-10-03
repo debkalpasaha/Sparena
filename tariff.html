@@ -173,13 +173,32 @@ input [type="checkbox"]{
  
 }
 
-.boxtitle:hover {
+  
+.receipt{
+
+margin-bottom: 2rem;
+width: 10rem;
+color: white;
+background-color:rgb(121, 113, 231);
+border: none;
+border-radius: 5px;
+font-size: 1.5rem;
+
+}
+
+.receipt:hover{
+color: rgb(0, 30, 129);
+background-color: #bdecbd;
+}
+
+
+.boxtitle:hover,.receipt:hover {
       transform: translatey(3px);
       box-shadow: none;
     }
     
     /* buttons hover Animation */
-    .boxtitle:hover {
+    .boxtitle:hover,.receipt:hover {
       animation: ani9 0.4s ease-in-out infinite alternate;
     }
     @keyframes ani9 {
@@ -255,13 +274,13 @@ input [type="checkbox"]{
 
 select{
   margin-top:1rem;
-  margin-left: 2rem;
-  width:5rem;
-  height:1.5rem;
+ 
+  width:3rem;
+  height:2.1rem;
   border-radius: 5px;
-  border: solid 0.2rem white;
-  background-color: #808080b9;
-  color: white;
+  border: solid 0.1rem white;
+  background-color: #e2b8e0b9;
+  color:black;
 }
 
   
@@ -376,7 +395,13 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
 }
 }
    
-  
+.people{
+    font-size: 1.2rem;
+    font-family: "Vibur",cursive;
+    color: #030257;
+  }
+
+ 
   
 </style>
 
@@ -424,6 +449,7 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
 
 
 </div>
+
 <ul> 
 
   <div style="text-align: center;">
@@ -447,299 +473,258 @@ text-shadow: 2px 2px 4px rgb(172, 172, 241) ;
  </ul> 
 </div>
 
-     <br> 
-        <div class="boxgrid">
-<div id="swimming" class="box">
-<div class="cardgrid">
-  <div style="text-align: center;">
-    <h2> Swimming</h2>
-   <img src="./img/swimming.gif" class="gridpic2" >
-  </div>
-  <div>
-  <div><table>
-    <tr>
-      <th>Monthly</th>
-      <th>Yearly</th>
-    
-    </tr>
-    <tr>
-      <td>20<input type="checkbox" id="price" value="20"></td>
-      <td>200<input type="checkbox"  id="price" value="200"></td>
-   
-    </tr>
-    
-  </table>
-</div>
-   <div>
-  <label for="people">No of people:</label>
-
-<select name="people" id="people">
+<p style="text-align: center" class="people">No of People:
+<select id="mySelect">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
-  <option value="5">5</option>
 </select>
 
-</div>
-</div>
-</div>
-</div>
-
-<div  id="spoccer" class="box">
-
-  <div class="cardgrid">
-    <div style="text-align: center;">
-      <h2> Spoccer</h2>
-    <img src="./img/spoccer.png" class="gridpic2" >
-   </div>
-   <div>
-   <div>
-    <table>
-     <tr>
-       <th>Monthly</th>
-       <th>Yearly</th>
-     
-     </tr>
-     <tr>
-       <td>12<input type="checkbox"  id="price" value="12"></td>
-       <td>120<input type="checkbox" id="price"  value="120"></td>
-    
-     </tr>
-     
-   </table>
-  </div>
-   <div>
-   <label for="people">No of people:</label>
-
-   <select name="people" id="people">
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>
-     <option value="5">5</option>
-   </select>
-   
-   </div>
-     
- </div>
- <div>
-</div>
-  
-    </div>
-</div>
-        </div>
- 
-
-<div class="boxgrid">
-  <div id="spaceminton" class="box2">
-  
+</p>
 
 
+     <br> 
+     <div class="boxgrid">
+      <div class="box">
       <div class="cardgrid">
         <div style="text-align: center;">
-          <h2 style="color:rgb(76, 16, 214);">Spaceminton</h2>
-   <img src="./img/spaceminton.jpg" class="gridpic" >
-  </div>
-  
-   
-<div>
-     <div>
-      <table>
-       <tr>
-         <th>Monthly</th>
-         <th>Yearly</th>
-       
-       </tr>
-       <tr>
-         <td>10<input type="checkbox" id="price" value="10"></td>
-         <td>100<input type="checkbox" id="price"  value="100"></td>
+          <h2> Swimming</h2>
+         <img src="./img/swimming.gif" class="gridpic2" >
+        </div>
+         <table>
+          <tr>
+            <th>Monthly</th>
+            <th>Yearly</th>
+          
+          </tr>
+          <tr>
+            <td>20<input type="checkbox" name="price" id="Swimming"   value="20"></td>
+            <td>200<input type="checkbox" name="price" id="Swimming"  value="200"></td>
+         
+          </tr>
+          
+        </table>
+         
+      </div>
+      </div>
       
-       </tr>
-       
-     </table>
-    </div>
-     <div>
-      <label for="people">No of people:</label>
-   
-      <select name="people" id="people">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </div>
-      </div> 
-   </div>
-    
-     
-     
-  
-  </div>
-  
-  
-  <div id="tennis" class="box2">
-  
-
-
-    <div class="cardgrid">
-      <div style="text-align: center;">
-<h2 style="color:rgb(76, 16, 214);">Tennis</h2>
- <img src="./img/tennis.jpg" class="gridpic" >
-</div>
-
- 
-<div>
-   <div>
-    <table>
-     <tr>
-       <th>Monthly</th>
-       <th>Yearly</th>
-     
-     </tr>
-     <tr>
-       <td>10<input type="checkbox" id="price" value="10"></td>
-       <td>100<input type="checkbox" id="price" value="100"></td>
-    
-     </tr>
-     
-   </table>
-  </div>
-   <div>
-    <label for="people">No of people:</label>
- 
-    <select name="people" id="people">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-  </div>
- </div>
-</div>
-   
-   
-
-</div>
-    
-      </div>
-  </div>
-  
-
-  <div class="boxgrid">
-    <div id="cyclecraft" class="box">
-    
-    
-      <div class="cardgrid">
-        <div style="text-align: center;">
-          <h2> Cyclecraft</h2>
-        <img src="./img/cycling.jpg" class="gridpic2" >
-        </div>
-        <div>
-        <div>
-        <table>
-         <tr>
-           <th>Monthly</th>
-           <th>Yearly</th>
-         
-         </tr>
-         <tr>
-           <td>8<input type="checkbox" id="price" value="8"></td>
-           <td>80<input type="checkbox" id="price"  value="80"></td>
-        
-         </tr>
-         
-       </table>
-      </div>
-       <div>
-        <label for="people">No of people:</label>
-     
-        <select name="people" id="people">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-      </div>
-     </div>
-    </div>
-       
-       
-    
-    </div>
-    
-    <div id="basketball" class="box">
-    
-    
-      <div class="cardgrid">
-        <div style="text-align: center;">
-          <h2>Basketball</h2>
-        <img src="./img/basketball.jpg" class="gridpic2" >
-        </div>
-        <div>
-        <div>
-        <table>
-         <tr>
-           <th>Monthly</th>
-           <th>Yearly</th>
-         
-         </tr>
-         <tr>
-           <td>12<input type="checkbox"  id="price" value="12"></td>
-           <td>120<input type="checkbox" id="price" value="120"></td>
-        
-         </tr>
-         
-       </table>
-      </div>
-       <div>
-        <label for="people">No of people:</label>
-     
-        <select name="people" id="people">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-      </div>
-     </div>
-       
-    </div> 
-    
-    </div>
-    
-    </div>
-    
-<script>
-
-function search_package() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('packages'); 
       
-    for (i = 0; i < x.length; i++) {  
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
-        } 
-        else { 
-            x[i].style.display="list-item";                  
-        } 
-    } 
-} 
+      <div class="box">
+      
+        <div class="cardgrid">
+          <div style="text-align: center;">
+            <h2> Spoccer</h2>
+          <img src="./img/spoccer.png" class="gridpic2" >
+         </div>
+          <table>
+           <tr>
+             <th>Monthly</th>
+             <th>Yearly</th>
+           
+           </tr>
+           <tr>
+             <td>12<input type="checkbox" name="price" id="Spoccer" value="12"></td>
+             <td>120<input type="checkbox" name="price" id="Spoccer"  value="120"></td>
+          
+           </tr>
+           
+         </table>
+          
+       </div>
+        
+        
+          </div>
+      </div>
+      
+       
+      
+      <div class="boxgrid">
+        <div class="box2">
+        
+      
+      
+            <div class="cardgrid">
+              <div style="text-align: center;">
+                <h2 style="color:rgb(76, 16, 214);">Spaceminton</h2>
+         <img src="./img/spaceminton.jpg" class="gridpic" >
+        </div>
+        
+         
+      
+           
+            <table>
+             <tr>
+               <th>Monthly</th>
+               <th>Yearly</th>
+             
+             </tr>
+             <tr>
+               <td>10<input type="checkbox" name="price" id="Spaceminton"  value="10"></td>
+               <td>100<input type="checkbox" name="price" id="Spaceminton"  value="100"></td>
+            
+             </tr>
+             
+           </table>
+            
+         </div>
+          
+           
+           
+        
+        </div>
+        
+        
+        <div class="box2">
+        
+      
+      
+          <div class="cardgrid">
+            <div style="text-align: center;">
+      <h2 style="color:rgb(76, 16, 214);">Tennis</h2>
+       <img src="./img/tennis.jpg" class="gridpic" >
+      </div>
+      
+       
+      
+         
+          <table>
+           <tr>
+             <th>Monthly</th>
+             <th>Yearly</th>
+           
+           </tr>
+           <tr>
+             <td>10<input type="checkbox" name="price" id="Tennis" value="10"></td>
+             <td>100<input type="checkbox" name="price" id="Tennis" value="100"></td>
+          
+           </tr>
+           
+         </table>
+          
+       </div>
+        
+         
+         
+      
+      </div>
+          
+            </div>
+        </div>
+        
+      
+        <div class="boxgrid">
+          <div class="box">
+          
+          
+            <div class="cardgrid">
+              <div style="text-align: center;">
+                <h2> Cyclecraft</h2>
+              <img src="./img/cycling.jpg" class="gridpic2" >
+              </div>
+              <table>
+               <tr>
+                 <th>Monthly</th>
+                 <th>Yearly</th>
+               
+               </tr>
+               <tr>
+                 <td>8<input name="price" type="checkbox" id="Cycling" value="8"></td>
+                 <td>80<input  name="price"  type="checkbox" id="Cycling"  value="80"></td>
+              
+               </tr>
+               
+             </table>
+              
+           </div>
+             
+             
+          
+          </div>
+          
+          <div class="box">
+          
+          
+            <div class="cardgrid">
+              <div style="text-align: center;">
+                <h2> Space Basketball</h2>
+              <img src="./img/basketball.jpg" class="gridpic2" >
+              </div>
+              <table>
+               <tr>
+                 <th>Monthly</th>
+                 <th>Yearly</th>
+               
+               </tr>
+               <tr>
+                 <td>12<input name="price" t type="checkbox" id="Space Basketball" value="12"></td>
+                 <td>120<input  name="price" type="checkbox" id="Space Basketball" value="120"></td>
+              
+               </tr>
+               
+             </table>
+              
+           </div>
+             
+             
+          
+          </div>
+         
+          </div>
+    </div>
+    
 
+    <p style="text-align: center;">
+      <input type="button" class="receipt" onclick='printChecked()' value="Get Receipt"/></p>
+    
 
-
-  </script>
   
 
  </body>
 
 
+ <script>
 
+  function search_package() { 
+      let input = document.getElementById('searchbar').value 
+      input=input.toLowerCase(); 
+      let x = document.getElementsByClassName('packages'); 
+        
+      for (i = 0; i < x.length; i++) {  
+          if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+              x[i].style.display="none"; 
+          } 
+          else { 
+              x[i].style.display="list-item";                  
+          } 
+      } 
+  } 
+  
+  
+  function printChecked(){
+           var pax=document.getElementById("mySelect").value;
+          var items=document.getElementsByName('price');
+         var package="";
+          var totalpeople=parseInt(pax);
+          var p=0;
+          for(var i=0; i<items.length; i++){
+            if(items[i].type=='checkbox' && items[i].checked==true)
+            {
+              package+="\n"+items[i].id;
+              var a = parseInt(items[i].value);
+           p=p+a;
+        
+            }
+          }
+         alert("YOUR RECEIPT\n\nSports Selected:"+package+"\n\nPrice per person is: " +p+ "\n\nTotal number of people: " +pax+"\n\nTotal Price is: " +(p*pax))
+        
+        }		
+
+      
+    </script>
+   
+  
+  
  
 
 

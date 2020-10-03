@@ -15,7 +15,24 @@
       margin-left: 0.5rem;
     }
     
-     .tour{
+    .receipt{
+
+margin-bottom: 1.5rem;
+width: 10rem;
+color: white;
+background-color:rgb(121, 113, 231);
+border: none;
+border-radius: 5px;
+font-size: 1.5rem;
+
+}
+
+.receipt:hover{
+color: rgb(0, 30, 129);
+background-color: #bdecbd;
+}
+
+.tour{
     
       
          width: 13rem;
@@ -25,6 +42,7 @@
          font-size: 1.5rem;
          margin-top:0.5rem;
     
+
      }
 
      @media(max-width:900px){
@@ -44,13 +62,13 @@
      }
     
      
-     button:hover {
+     .receipt:hover, button:hover {
        transform: translatey(3px);
     
      }
     
      /* buttons hover Animation */
-     button:hover {
+     .receipt:hover, button:hover {
        animation: ani9 0.4s ease-in-out infinite alternate;
      }
      @keyframes ani9 {
@@ -257,13 +275,18 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
 
   
   select{
-  background-color: #6a68f88c;
-  color: white;
+  background-color: #93ebd5cc;
+  color: rgb(14, 16, 134);
   border-radius: 5px;
-  border: 0.2rem solid white;
+  border: 0.1rem solid white;
  width:3rem;
  height:2rem;
  font-size: 1rem;
+  }
+
+  .people{
+    font-size: 1.2rem;
+    font-family: "Vibur",cursive;
   }
 
 
@@ -353,7 +376,9 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
   margin-left: 0;
 }
 }
-   
+  #receiptbox{
+    display: none;
+  }
    </style>
 
 
@@ -414,6 +439,16 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
  </ul> 
 
      <br> 
+
+  <p class="people">No of People:   
+<select id="mySelect">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+
+</p>
    
     
   <h2 class="title" id="#packages">Packages Available:</h2>
@@ -477,26 +512,15 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
   
   </tr>
   <tr>
-    <td>22<input type="checkbox"  value="22"></td>
-    <td>220<input type="checkbox"  value="220"></td>
+    <td>22<input name="price" type="checkbox" id="Super Space Package" value="22"></td>
+    <td>220<input  name="price" type="checkbox" id="Super Space Package" value="220"></td>
  
   </tr>
   
 </table>
 
 <br>
-<div>
-  <label for="people">No of people:</label>
 
-  <select name="people" id="people">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  </select>
-  
-  </div>
 
   </ul>
 
@@ -526,26 +550,15 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
     
     </tr>
     <tr>
-      <td>25<input type="checkbox"  value="25"></td>
-      <td>250<input type="checkbox"  value="250"></td>
+      <td>25<input name="price" type="checkbox" id="Land Lover Package"  value="25"></td>
+      <td>250<input name="price" type="checkbox" id="Land Lover Package"  value="250"></td>
    
     </tr>
     
   </table>
   
 <br>
-<div>
-  <label for="people">No of people:</label>
 
-  <select name="people" id="people">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  </select>
-  
-  </div>
     </ul>
 
     
@@ -577,71 +590,102 @@ text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
       
       </tr>
       <tr>
-        <td>42<input type="checkbox"  value="42"></td>
-        <td>420<input type="checkbox"  value="420"></td>
+        <td>42<input  name="price" type="checkbox" id="Space Energizer Package" value="42"></td>
+        <td>420<input  name="price" type="checkbox" id="Space Energizer Package"  value="420"></td>
      
       </tr>
       
     </table>
     
 <br>
-<div>
-  <label for="people">No of people:</label>
 
-  <select name="people" id="people">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  </select>
-  
-  </div>
       </ul>
 
       
 
     </div>
       </div>
+
+      <p style="text-align: center;">
+
+        <a href="#receiptbox">
+        <input type="button" class="receipt" onclick='printChecked()' value="Get Receipt"/></p>
+
+      </a>
+
+      <div id="receiptbox">
+
+     
+      
+              </div>
+
+      
+        <script>
+          function myFunction1() {
+            document.getElementById("package1").style.display = "block";
+            document.getElementById("package2").style.display = "none";
+            document.getElementById("package3").style.display = "none";
+          }
+        
+          function myFunction2() {
+            document.getElementById("package2").style.display = "block";
+            document.getElementById("package1").style.display = "none";
+            document.getElementById("package3").style.display = "none";
+          }
+        
+          function myFunction3() {
+            document.getElementById("package3").style.display = "block";
+            document.getElementById("package1").style.display = "none";
+            document.getElementById("package2").style.display = "none";
+          }
+        
+          function search_package() { 
+            let input = document.getElementById('searchbar').value 
+            input=input.toLowerCase(); 
+            let x = document.getElementsByClassName('packages'); 
+              
+            for (i = 0; i < x.length; i++) {  
+                if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+                    x[i].style.display="none"; 
+                } 
+                else { 
+                    x[i].style.display="list-item";                  
+                } 
+            } 
+        }
+        
+       
+  function printChecked(){
+           var pax=document.getElementById("mySelect").value;
+          var items=document.getElementsByName('price');
+          
+          var totalpeople=parseInt(pax);
+          var p=0;
+          var package="";
+          for(var i=0; i<items.length; i++){
+            if(items[i].type=='checkbox' && items[i].checked==true)
+            {
+            package+="\n"+items[i].id;
+              var a = parseInt(items[i].value);
+           p=p+a;
+        
+            }
+          }
+          alert("Package selected: " +package+ "\n\nPrice per person is: " +p+ "\n\nTotal number of people: " +pax+"\n\nTotal Price is: " +(p*pax))
+        
+        }		
+
+
+          </script>
+
+
  </body>
 
  
  
- <script>
-  function myFunction1() {
-    document.getElementById("package1").style.display = "block";
-    document.getElementById("package2").style.display = "none";
-    document.getElementById("package3").style.display = "none";
-  }
 
-  function myFunction2() {
-    document.getElementById("package2").style.display = "block";
-    document.getElementById("package1").style.display = "none";
-    document.getElementById("package3").style.display = "none";
-  }
-
-  function myFunction3() {
-    document.getElementById("package3").style.display = "block";
-    document.getElementById("package1").style.display = "none";
-    document.getElementById("package2").style.display = "none";
-  }
-
-  function search_package() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('packages'); 
-      
-    for (i = 0; i < x.length; i++) {  
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
-        } 
-        else { 
-            x[i].style.display="list-item";                  
-        } 
-    } 
-} 
-  </script>
  
 
+ 
 
 </html>
