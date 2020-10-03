@@ -1,0 +1,635 @@
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    color:black;
+  
+  }
+  
+  .option {
+    width: 99%;
+    height: 25rem;
+  border-radius: 25px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.911);
+    color: black;
+ 
+    box-shadow: 2px 2px 4px rgb(3, 84, 99);
+  }
+  
+  .center {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 1.5rem;
+    height: 20%;
+    width: 95%;
+    text-align: center;
+   color:white;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+  
+    background-image: linear-gradient( #68dbf8 10%, rgb(30, 6, 139)100%);
+    
+    margin:1rem;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgb(97, 95, 95);
+  }
+  
+
+  @media(max-width:900px){
+    .header {
+        padding: 1.5rem;
+        height: 20%;
+        width: 93%;
+     
+      
+      }
+  }
+  .para {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    margin-left:1rem;
+    margin-right:1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  @media (min-width: 900px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+
+  .boxcontainer{
+
+    background-color: rgba(126, 126, 241, 0.555);
+    background-image: linear-gradient( #7371ec 10%, rgb(184, 184, 226)100%);
+    border-radius: 5px;
+  margin-left:2rem;
+  margin-right:2rem;
+  margin-bottom:2rem;
+    padding:1rem;
+    box-shadow: 4px 4px 4px 4px pink;
+ 
+  }
+
+  .boxcontainer:hover{
+
+    background-image: linear-gradient( #b958f1 10%, rgb(88, 135, 223)100%);
+    border-radius: 5px;
+margin:2rem;
+    padding:1rem;
+    box-shadow:  4px 4px 4px 4px rgb(108, 141, 230);
+  }
+
+  
+
+  body {
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+background-image: linear-gradient( rgb(210, 243, 231) 10%, rgb(34, 214, 238)100%);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+
+  * {
+  margin:0;
+  padding:0;
+
+  }
+
+
+
+
+
+
+.sportgrid{
+
+display:grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr  ;
+column-gap: 0;
+row-gap: 0;
+margin-left: 15%;
+margin-right: 13%;
+
+}
+
+.sportgrid2{
+
+display:grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr  ;
+column-gap: 0;
+row-gap: 0;
+margin-left: 25%;
+margin-right: 23%;
+margin-bottom: 2rem;
+}
+@media(max-width:600px){
+
+.sportgrid{
+margin-left: 0;
+display:grid;
+grid-template-rows: 1fr 1fr 1fr 1fr ;
+grid-template-columns: 1fr ;
+margin:1rem;
+}
+
+.sportgrid2{
+margin-left: 0;
+display:grid;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr ;
+margin:1rem;
+}
+}
+
+
+.pic{
+border-radius: 93px;
+width: 65%;
+border:solid 0.2rem white;
+margin:1rem;
+box-shadow: 2px 2px 6px#fcedc3;
+}
+
+
+.pic2{
+border-radius: 100px;
+width: 70%;
+border:solid 0.2rem white;
+box-shadow: 2px 2px 6px#b1f1ce;
+}
+
+.pic2:hover{
+
+box-shadow: 2px 2px 2px 2px black ;
+width: 80%;
+}
+
+
+.pic:hover{
+
+box-shadow: 2px 2px 2px 2px black ;
+width: 90%;
+}
+
+
+/* buttons hover */
+button:hover {
+transform: translatey(3px);
+box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+0% {
+transform: translateY(3px);
+}
+100% {
+transform: translateY(5px);
+}
+}
+
+.logo{
+width: 40%;
+}
+.glow {
+margin:0;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+height:7rem;
+border-radius:70px;
+}
+
+@media(max-width:900px)
+{
+.glow {
+border-radius:80px;
+height:4rem;
+}
+
+
+.pic,.pic2{
+border-radius: 100px;
+width: 30%;
+margin:1rem;
+
+}
+
+
+
+
+.logo{
+width: 40%;
+
+}
+}
+@-webkit-keyframes glow {
+from {
+
+}
+to {
+box-shadow: 0 0 10px #fff, 0 0 20px rgb(226, 203, 231), 0 0 20px #8a00e6, 0 0 20px #8709ee, 0 0 30px #480580;
+}
+}
+
+
+button:hover {
+transform: translatey(3px);
+box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+0% {
+transform: translateY(3px);
+}
+100% {
+transform: translateY(5px);
+}
+}
+
+i{
+margin-left: 0.5rem;
+}
+
+.tour{
+
+
+ width: 13rem;
+ color: rgb(14, 0, 94);
+ background-color:rgba(231, 229, 113, 0);
+border:none;
+ font-size: 1.5rem;
+ margin-top:1rem;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+@media(max-width:900px){
+.tour{
+
+
+font-size: 1rem;
+margin-top:2rem;
+padding-left:3rem;
+
+}
+
+}
+
+
+button:hover {
+transform: translatey(3px);
+
+}
+
+/* buttons hover Animation */
+button:hover {
+animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+0% {
+ transform: translateY(3px);
+}
+100% {
+ transform: translateY(5px);
+}
+}
+.tour:hover{
+ color:rgb(103, 58, 228);
+ text-shadow: 4px 4px 4px rgba(0, 225, 255, 0.884);
+ background-color: #812ec400;
+}
+
+.operation{
+color:rgb(105, 105, 105);
+font-weight: 500;
+font-size: 1.5rem;
+}
+
+.notice{
+color:rgb(0, 0, 0);
+font-weight: 500px;
+font-size: 1.3rem;
+text-shadow: 2px 2px 4px rgb(96, 116, 207);
+}
+p{
+color:rgb(75, 74, 74);
+
+}
+
+*{
+padding:0;
+margin:0;
+}
+
+
+.pic2:hover{
+
+box-shadow: 2px 2px 2px 2px rgb(208, 170, 243);
+width: 80%;
+}
+
+
+.pic:hover{
+
+box-shadow: 2px 2px 2px 2px rgb(208, 170, 243);
+width: 75%;
+}
+body{
+padding: 0;
+margin: 0;
+}
+
+.sport{
+font-weight: 300;
+width:90%;
+
+background-image: linear-gradient( rgb(236, 210, 243) 10%, rgb(149, 234, 245)100%);
+border: solid plum 0.2rem;
+margin-bottom:1rem;
+border-radius: 25px;
+}
+
+@media(max-width:900px){
+.sport{
+width:99%;
+height:3rem;
+margin:0;
+padding-top:0.5rem;
+}
+}
+.sportdiv:hover{
+color:white;
+text-shadow: 4px 4px 4px rgb(0, 156, 156);
+}
+
+
+
+.info{
+
+background: url("https://cdn.pixabay.com/photo/2015/07/02/10/13/sky-828648_1280.jpg");
+
+box-shadow:  4px 4px 4px 4px rgb(108, 141, 230);
+height:200px;
+color: black;
+width:95%;
+margin-left: 2rem;
+border-radius: 5px;
+filter: brightness(100%);
+border:0.1rem rgb(155, 228, 247) solid;
+}
+
+#basketballinfo,#cyclinginfo,#spoccerinfo,#swimminginfo,#trackinfo,#spacemintoninfo,#tennisinfo{
+display: none;
+}
+
+.closebutton{
+
+margin-top:0.5rem;
+margin-right:1rem;
+color:#f5f5f5;
+font-size: 1.5rem;
+text-shadow: 4px 4px 4px 4px rgb(48, 48, 48);
+
+}
+
+.cardtitle{
+color:white;
+font-weight: 300;
+font-size: 1.5rem;
+text-shadow: 4px 4px 4px rgb(155, 235, 255);
+
+}
+
+.background-wrap {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    margin-top:2rem;
+  }
+
+  
+
+  @media(max-width:900px){
+    .pic,.pic2{
+width:0rem;
+border:none;
+    }
+
+    .info{
+      width:85%;
+    }
+
+    .background-wrap {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    margin-top:3rem;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+.logo{
+  margin:0;
+}
+  }
+  
+ 
+.topnavigation{
+font-size:1rem;
+}
+.topnavigation a {
+float: left;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.2rem;
+}
+
+.topnavigation {
+background-image: linear-gradient( rgb(210, 243, 231) 10%, rgb(34, 214, 238)100%);
+overflow: hidden;
+margin-bottom: 1rem;
+box-shadow: 2px 2px 4px rgb(102, 101, 101);
+}
+
+
+/* Change the color of links on hover */
+.topnavigation a:hover {
+background-image: linear-gradient( rgb(155, 166, 233) 10%, rgb(62, 120, 247)100%);
+color: white;
+}
+
+/* Add a color to the active/current link */
+.topnavigation a.active {
+background-color: #032b5a;
+color: white;
+}
+
+.topnav{
+font-size:1rem;
+}
+.topnav a {
+float: left;
+
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.2rem;
+}
+
+.boxtitle{
+border:solid white 0.08rem;
+border-radius: 5px;
+
+height: 3.5rem;
+padding: none;
+background-image: linear-gradient(to top, rgb(85, 165, 218) 10%, rgb(199, 149, 228)100%); 
+color: rgb(255, 255, 255);
+margin: 0.2rem;
+width:8rem;
+
+}
+.boxtitle:hover{
+border:solid white 0.08rem;
+color: rgb(0, 0, 0);
+border-radius: 5px;
+background-image: linear-gradient(to top, rgb(217, 228, 247) 10%, rgb(191, 159, 250)100%); 
+}
+
+input [type="checkbox"]{
+margin-left: 0.5rem;
+
+}
+
+.boxtitle:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+/* buttons hover Animation */
+.boxtitle:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@media(max-width: 900px){
+.boxtitle,.tour{
+visibility: hidden;
+}
+
+}
+
+@media(min-width: 900px){
+.topnavigation{
+visibility: hidden;
+height:0;
+}
+.topnavigation a {
+
+padding:0;
+text-decoration: none;
+font-size:0rem;
+}
+
+
+
+}
+
+*{
+padding:0;
+margin:0;
+}
+
+.topnav{
+margin-left:2rem;
+}
+
+.heading{
+margin-top:1rem;
+font-size: 2rem;
+font-weight:400;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+
+
+@media(max-width: 900px){
+
+
+.heading{
+margin-top:1rem;
+font-size: 1.5rem;
+font-weight:100;
+
+}
+
+.topnav,.boxtitle,.tour{
+visibility: hidden;
+height:0;
+margin:0;
+padding:0;
+}
+
+.topnav a{
+font-size: 0;
+}
+}
+
+.sportdetail{
+margin-top: 2rem;
+color: #b1f1ce;
+font-size: 1.3rem;
+font-weight: 70;
+text-shadow: 2px 2px 4px rgb(243, 144, 238);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
