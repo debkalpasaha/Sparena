@@ -121,6 +121,14 @@
     margin-top: 2rem;
     font-family: "Vibur", cursive;
 }
+
+@media(min-width:900px)
+{
+  .title{
+  color: rgb(6, 8, 112);
+
+  }
+}
   .packagetitle{
       font-size:1.5rem;
       font-weight:500;
@@ -218,7 +226,7 @@
     {
       .receipt{
       width:50%;
-      margin-left: 7.5rem;
+      margin-left: 7rem;
       }
     }
 
@@ -485,6 +493,11 @@ font-size: 1rem;
   font-weight: 500;
  }
 
+ @media(max-width:900px)
+ {.people{
+   color:white;
+ }
+ }
 
 
 
@@ -555,7 +568,7 @@ margin:1rem;
 font-size: 1.3rem;
 color: rgb(255, 255, 255);
  text-shadow: 2px 1px  2px rgb(191, 170, 240);
-   font-weight: 300;
+   font-weight: 400;
    text-decoration: none;
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
