@@ -48,7 +48,7 @@
    color:black;
    text-shadow: 2px 2px 4px#c08dfa;
     font-family: "Century Gothic", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.3rem;
   
     background-image: linear-gradient( #68dbf8 10%, rgb(183, 172, 235)100%);
@@ -146,6 +146,8 @@
     text-align: center;
     padding: 8px;
     width: 50%;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.3rem;
   }
   
   tr:nth-child(even) {
