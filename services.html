@@ -265,7 +265,95 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
  height:2rem;
  font-size: 1rem;
   }
-</style>
+
+
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+#searchbar {
+  width: 100%;
+  border: 3px solid #73d5e2;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.searchTerm:focus{
+  color: #73d5e2;
+}
+
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 2rem;
+}
+
+
+.packages{ 
+    font-size:1rem; 
+   color: white;
+   text-align: justify;
+
+
+   padding: 0.1rem;
+   margin-left: 3rem;
+ 
+  
+
+   } 
+   .packages:link {
+  font-size: 1.3rem;
+  color: black;
+   text-shadow: 2px 1px  2px rgb(191, 170, 240);
+     font-weight: 300;
+     text-decoration: none;
+     font-family: "Vibur", cursive;
+  
+  text-underline-position: unset;  
+
+}
+
+.packagelist{
+
+  font-family: "Vibur", cursive;
+  font-size: 1.2rem;
+  color: #aff0f8;
+  margin-bottom: 0.2rem;
+text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
+}
+@media(max-width: 900px){
+  
+  .packages:link {
+
+  font-size: 0.9rem;
+  
+}
+.packages{
+  margin-left: 2rem;
+}
+}
+   
+   </style>
 
 
   </head>
@@ -302,11 +390,35 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
         <br>
 <div  id="packages" style="text-align: center;">
  <img src="./img/price.png" class="price">
+ <div class="search">
+  <input type="text" id="searchbar"  name="search"  onkeyup="search_package()" placeholder="Look for a Package">
+  <button type="submit" class="searchButton">
+    <i class="fa fa-search"></i>
+ </button>
+ <br>
  
+
+
+</div>
+<ul> 
+  <li class="packagelist">Package List:</li>
+
+  <li>
+  <a href="#spacesaver" class="packages">Space Saver</a>
+
+  <a href="#landlover" class="packages">Land Lover </a> 
+
+  <a href="#spaceenergizer" class="packages">Space Energizer</a> 
+</li>
+ </ul> 
+
+     <br> 
+   
+    
   <h2 class="title">Packages Available:</h2>
   
   <div class="center servicegrid">
-    <div  class="option">
+    <div id="spacesaver" class="option">
       <div class="header">Super Space Package</div>
       <div class="center">
         <img src="./img/package1.png" width="50%" />
@@ -318,7 +430,7 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
       </div>
     </div>
 
-    <div class="option">
+    <div id="landlover" class="option"  >
       <div class="header">Land Lover Package</div>
       <img src="./img/package2.png" width="45%" />
       <p class="para">
@@ -330,7 +442,7 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
    
     </div>
 
-    <div class="option">
+    <div id="spaceenergizer" class="option" >
       <div class="header">Space Energizer Package</div>
       <img src="./img/package3.png" width="45%" />
       <p class="para">
@@ -342,7 +454,7 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
    
   </div>
 </div>
-<div id="package1" style="text-align: center;">
+<div   id="package1" style="text-align: center;">
   <p class="packagetitle">Super Space Package:</p>
 <div class="packagebox">
  
@@ -390,7 +502,7 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
 
 </div>
   </div>
-  <div id="package2" style="text-align: center;">
+  <div   id="package2" style="text-align: center;">
     <p class="packagetitle">Land Lover Package:</p>
   <div class="packagebox">
    
@@ -440,7 +552,7 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
   </div>
     </div>
 
-    <div id="package3" style="text-align: center;">
+    <div  id="package3" style="text-align: center;">
       <p class="packagetitle">Space Energizer Package:</p>
     <div class="packagebox">
      
@@ -512,6 +624,21 @@ background-image: linear-gradient( #6a68f8 10%, rgb(216, 204, 247)100%);
     document.getElementById("package1").style.display = "none";
     document.getElementById("package2").style.display = "none";
   }
+
+  function search_package() { 
+    let input = document.getElementById('searchbar').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('packages'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="list-item";                  
+        } 
+    } 
+} 
   </script>
  
 

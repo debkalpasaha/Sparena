@@ -289,6 +289,91 @@ select{
   
 
 }
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+#searchbar {
+  width: 100%;
+  border: 3px solid #73d5e2;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.searchTerm:focus{
+  color: #73d5e2;
+}
+
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 2rem;
+}
+
+
+.packages{ 
+    font-size:1rem; 
+   color: white;
+   text-align: justify;
+
+
+   padding: 0.1rem;
+   margin-left: 3rem;
+ 
+  
+
+   } 
+   .packages:link {
+  font-size: 1.3rem;
+  color: black;
+   text-shadow: 2px 1px  2px rgb(191, 170, 240);
+     font-weight: 300;
+     text-decoration: none;
+     font-family: "Vibur", cursive;
+  
+  text-underline-position: unset;  
+
+}
+
+.packagelist{
+
+  font-family: "Vibur", cursive;
+  font-size: 1.2rem;
+  color: #aff0f8;
+  margin-bottom: 0.2rem;
+text-shadow: 2px 2px 4px rgb(58, 58, 59) ;
+}
+@media(max-width: 900px){
+  
+  .packages:link {
+
+  font-size: 0.9rem;
+  
+}
+.packages{
+  margin-left: 2rem;
+}
+}
+   
   
   
 </style>
@@ -327,8 +412,42 @@ select{
         <br>
 <br>
 <br>
+<div class="search">
+  <input type="text" id="searchbar"  name="search"  onkeyup="search_package()" placeholder="Look for a Sport">
+  <button type="submit" class="searchButton">
+    <i class="fa fa-search"></i>
+ </button>
+ <br>
+ 
+
+
+</div>
+<ul> 
+
+  <div style="text-align: center;">
+  <li class="packagelist">Sports List:</li>
+
+  <li>
+  <a href="#swimming" class="packages">Swimming</a>
+
+  <a href="#spoccer" class="packages">Spoccer </a> 
+
+  <a href="#spaceminton" class="packages">Spaceminton</a> 
+</li>
+
+<li>
+  <a href="#tennis" class="packages">Tennis</a>
+
+  <a href="#cyclecraft" class="packages">Cyclecraft</a> 
+
+  <a href="#basketball" class="packages">Basketball</a> 
+</li>
+ </ul> 
+</div>
+
+     <br> 
         <div class="boxgrid">
-<div class="box">
+<div id="swimming" class="box">
 <div class="cardgrid">
   <div style="text-align: center;">
     <h2> Swimming</h2>
@@ -365,7 +484,7 @@ select{
 </div>
 </div>
 
-<div class="box">
+<div  id="spoccer" class="box">
 
   <div class="cardgrid">
     <div style="text-align: center;">
@@ -411,7 +530,7 @@ select{
  
 
 <div class="boxgrid">
-  <div class="box2">
+  <div id="spaceminton" class="box2">
   
 
 
@@ -458,7 +577,7 @@ select{
   </div>
   
   
-  <div class="box2">
+  <div id="tennis" class="box2">
   
 
 
@@ -508,7 +627,7 @@ select{
   
 
   <div class="boxgrid">
-    <div class="box">
+    <div id="cyclecraft" class="box">
     
     
       <div class="cardgrid">
@@ -550,7 +669,7 @@ select{
     
     </div>
     
-    <div class="box">
+    <div id="basketball" class="box">
     
     
       <div class="cardgrid">
@@ -593,7 +712,23 @@ select{
    
     </div>
     
+<script>
 
+function search_package() { 
+    let input = document.getElementById('searchbar').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('packages'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="list-item";                  
+        } 
+    } 
+} 
+</script>
 
 
  </body>
