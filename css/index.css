@@ -108,7 +108,7 @@ margin:2rem;
     background-repeat: no-repeat;
 
 
-background-image: linear-gradient( rgb(210, 243, 231) 10%, rgb(34, 214, 238)100%);
+background-image: linear-gradient( rgb(99, 142, 223) 30%,rgb(8, 185, 188) 50%,rgb(210, 243, 231) 80%, rgb(34, 214, 238)100%);
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
@@ -248,7 +248,7 @@ margin:1rem;
 
 
 .logo{
-width: 40%;
+width: 50%;
 
 }
 }
@@ -288,7 +288,7 @@ margin-left: 0.5rem;
 
 
  width: 13rem;
- color: rgb(14, 0, 94);
+ color: rgb(6, 5, 110);
  background-color:rgba(231, 229, 113, 0);
 border:none;
  font-size: 1.5rem;
@@ -328,19 +328,20 @@ animation: ani9 0.4s ease-in-out infinite alternate;
 }
 }
 .tour:hover{
- color:rgb(103, 58, 228);
+ color:rgb(255, 255, 255);
  text-shadow: 4px 4px 4px rgba(0, 225, 255, 0.884);
  background-color: #812ec400;
 }
 
 .operation{
-color:rgb(105, 105, 105);
+color:rgb(78, 78, 78);
 font-weight: 500;
 font-size: 1.5rem;
+text-shadow: 2px 2px 4px rgb(96, 116, 207);
 }
 
 .notice{
-color:rgb(0, 0, 0);
+color:rgb(78, 78, 78);
 font-weight: 500px;
 font-size: 1.3rem;
 text-shadow: 2px 2px 4px rgb(96, 116, 207);
@@ -493,7 +494,7 @@ font-size: 1.2rem;
 }
 
 .topnavigation {
-background-image: linear-gradient( rgb(210, 243, 231) 10%, rgb(34, 214, 238)100%);
+background-image: linear-gradient( rgb(186, 243, 222) 10%, rgb(21, 196, 187)70%, rgb(1, 111, 126)100%);
 overflow: hidden;
 margin-bottom: 1rem;
 box-shadow: 2px 2px 4px rgb(102, 101, 101);
@@ -504,11 +505,13 @@ box-shadow: 2px 2px 4px rgb(102, 101, 101);
 .topnavigation a:hover {
 background-image: linear-gradient( rgb(155, 166, 233) 10%, rgb(62, 120, 247)100%);
 color: white;
+border-bottom: solid 0.2rem white;
+
 }
 
 /* Add a color to the active/current link */
 .topnavigation a.active {
-background-color: #032b5a;
+  background-image: linear-gradient( rgb(4, 14, 77) 10%, rgb(71, 212, 205)100%);
 color: white;
 }
 

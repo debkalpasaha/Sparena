@@ -109,11 +109,11 @@
       padding:0;
     }
     .box,.box2{
-     height: 95%;
+     height: 97%;
      margin-left:1rem;
      margin-right:2rem;
      margin-top:0;
-     width:90%;
+     width:91%;
     }
   
   }
@@ -317,7 +317,7 @@ font-size: 1.2rem;
 }
 
 .topnavigation {
-background-image: linear-gradient( rgb(210, 243, 231) 10%, rgb(34, 214, 238)100%);
+background-image: linear-gradient( rgb(167, 233, 253) 20%, rgb(210, 223, 243) 50%, rgb(62, 216, 221)100%);
 overflow: hidden;
 margin-bottom: 1rem;
 box-shadow: 2px 2px 4px rgb(102, 101, 101);
@@ -326,8 +326,9 @@ box-shadow: 2px 2px 4px rgb(102, 101, 101);
 
 /* Change the color of links on hover */
 .topnavigation a:hover {
-background-image: linear-gradient( rgb(155, 166, 233) 10%, rgb(62, 120, 247)100%);
+background-image: linear-gradient( rgb(155, 166, 233) 10%, rgb(226, 170, 228)100%);
 color: white;
+border-bottom: 0.2rem solid white;
 }
 
 
@@ -371,7 +372,7 @@ width:3rem;
 height:2.1rem;
 border-radius: 5px;
 border: solid 0.1rem white;
-background-color: #e2b8e0b9;
+background-color: #c0a9f5b9;
 color:black;
 }
 
@@ -405,7 +406,7 @@ width: 100%;
 border: 3px solid #73d5e2;
 border-right: none;
 padding: 5px;
-height: 36px;
+height: 40px;
 border-radius: 5px 0 0 5px;
 outline: none;
 color: #9DBFAF;
@@ -422,7 +423,7 @@ color: #73d5e2;
 
 .searchButton {
 width: 40px;
-height: 36px;
+height: 40px;
 border: 1px solid #00B4CC;
 background: #00B4CC;
 text-align: center;
