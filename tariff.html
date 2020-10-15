@@ -206,7 +206,7 @@
           </tr>
           <tr>
             <td>20<input type="checkbox" name="price" id="Swimming-Monthly "   value="20"></td>
-            <td>200<input type="checkbox" name="price" id="Swimming-Yearly"  value="200"></td>
+            <td>200<input type="checkbox" name="price" id="Swimming-Yearly "  value="200"></td>
          
           </tr>
           
@@ -267,7 +267,7 @@
              </tr>
              <tr>
                <td>10<input type="checkbox" name="price" id="Spaceminton-Monthly "  value="10"></td>
-               <td>100<input type="checkbox" name="price" id="Spaceminton-Yearly"  value="100"></td>
+               <td>100<input type="checkbox" name="price" id="Spaceminton-Yearly "  value="100"></td>
             
              </tr>
              
@@ -335,8 +335,8 @@
                
                </tr>
                <tr>
-                 <td>8<input name="price" type="checkbox" id="Cycling-Monthly " value="8"></td>
-                 <td>80<input  name="price"  type="checkbox" id="Cycling-Yearly "  value="80"></td>
+                 <td>8<input name="price" type="checkbox" id="Cyclecraft-Monthly " value="8"></td>
+                 <td>80<input  name="price"  type="checkbox" id="Cyclecraft-Yearly"  value="80"></td>
               
                </tr>
                
@@ -416,7 +416,8 @@
           for(var i=0; i<items.length; i++){
             if(items[i].type=='checkbox' && items[i].checked==true)
             {
-              package+="\n"+items[i].id;
+             
+            package+="\n"+items[i].id+"("+items[i].value+" Space Dezos)";
               var a = parseInt(items[i].value);
            p=p+a;
         
